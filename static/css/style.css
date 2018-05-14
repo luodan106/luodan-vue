@@ -1,0 +1,45 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+.logindiv{
+    width: 25rem;
+    height: 23%;
+    min-width:300px ;
+    min-height: 300px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border:1px solid #dabdbd;
+}
+input[type="text"],input[type="password"]{
+    margin: 1rem auto;
+    width: 80%;
+}
+button{
+    background-color: #95afcc;
+    border-color: #95afcc;
+    margin:0.5rem auto;
+    width: 80%;
+}
+.registerDiv{
+    width:30rem;
+    height:2rem;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.logindiv>button>a{
+    color: white;
+}
