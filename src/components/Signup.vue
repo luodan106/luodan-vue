@@ -1,6 +1,6 @@
 <template>
 <form v-on:submit.prevent="submit">
-  <div class="registerDiv">
+  <div class="register-div">
       <input type="text" v-model="info.name" class="form-control" placeholder="请输入用户名"/>
       <input type="text" v-model="info.password" class="form-control" placeholder="请输入密码"/>
       <input type="text" v-model="info.email" class="form-control" placeholder="请输入邮箱"/>
@@ -23,6 +23,7 @@ export default {
         }
     },
     methods:{
+        //提交注册数据
       submit(){                                 
           const url = '/api/register';
           const data=this.info;

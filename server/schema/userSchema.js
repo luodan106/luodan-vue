@@ -9,6 +9,7 @@ const userSchema=new mongoose.Schema({
     password:{
         type:String
     },
+    img:String,
     //邮箱
     email:{
         type:String

@@ -2,12 +2,31 @@ html,body{
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 0px;
+}
+fieldset{
+    margin:0 2px;
+    text-align: left;
+    border:1px solid silver
+}
+
+legend{
+    padding:.5em;
+    border:0;
+    text-align: left;
+    width:auto;
+    font-size: 0.1rem;
+}
+body a{
+    color: rgb(121, 117, 109);
+}
+body a:hover{
+    text-decoration: none;
 }
 button{
     cursor: pointer;
 }
-.logindiv{
+.login-div{
     width: 25rem;
     height: 23%;
     min-width:300px ;
@@ -30,7 +49,7 @@ button{
     margin:0.5rem auto;
     width: 80%;
 }
-.registerDiv{
+.register-div{
     width:30rem;
     height:2rem;
     position:absolute;
@@ -40,6 +59,190 @@ button{
     right: 0;
     bottom: 0;
 }
-.logindiv>button>a{
+.login-div>button>a{
     color: white;
+}
+.topnav{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 50px;
+    background-color: #f9f9f2;
+    z-index: 2;
+}
+.content{
+    width: 60%;
+    height: 1900px;
+    position: absolute;
+    background-image: url("../images/ejdYqdL8XP.jpg");
+    background-size: contain;
+    margin: 48px auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.info-column{
+    height: 17rem;
+    width: 100%;
+    color: white;
+    margin: 0px auto ;
+    text-align: left;
+    background-image: url('../images/kwpm77r5mV.jpg');
+    background-size: 95% 90%;
+}
+.info-column>img{
+    width: 250px;
+    height: 250px;
+}
+.content-container{
+  height: 100%;
+}
+.left-content{
+    position: fixed;
+}
+.left-content>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+}
+.left-content>ul>li{
+    width: 230px;
+    height: 120px;
+    font-size: 1.5rem;
+    background-image: url('../images/sec1.png');
+    background-size: 230px 150px;
+    text-align: center;
+    padding-top: 50px;
+}
+.articleCotent{
+    margin: 10px auto;
+    height: 100%;
+}
+.right-content{
+    position: fixed;
+    right: 260px;
+}
+.right-content>ul{
+    list-style: none;
+    padding:0 15px;
+
+}.right-content>ul>li{
+    text-align: left;
+    font-size: 1.5rem;
+}
+.title-font{
+    display: block;
+    font-size: 4rem;
+    text-align: left;
+    font-family: FZShuTi;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 ;
+    padding:0rem 3rem 0 1rem;
+    margin-top:-200px;
+    margin-left:250px;
+    font-weight: bolder;
+}
+.record-input{
+    width: 100%;
+    height: 280px;
+}
+.input-div{
+    width: 100%;
+    height:  65%;
+    background-color:white; 
+}
+.input-area{
+    width:90%;
+    height: 55%;
+    position: relative;
+    margin-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    border:1px solid #afa4a4; 
+    overflow: auto;
+}
+.image-container{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    margin: 5px 0;
+    transform: translateX(-50%);
+    border: 1px dashed #afa4a4;
+    text-align: left;
+}
+.image-container>img{
+    width: 64px;
+    height: 64px;
+}
+.record-input>button{
+    font-size: 12px;
+    margin-bottom: 1px;
+    width: 100%;
+    border-color: #c0c7ce;
+    background-color: #c0c7ce;
+}
+.record-input>button:hover{   
+    border-color: #dce9f5;
+    background-color: #dce9f5;
+}
+.public-content{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    background-image: url('../images/border1.png');
+    background-size:100% 110%;
+}
+.public-content1{
+    position: absolute;
+    width: 95%;
+    height: 1000px;
+    top: 20px;
+    background:rgba(255, 255, 255, 0.3);
+    overflow: auto;
+}
+.article-content{
+    width: 80%;
+    max-height: 15rem;
+    position: relative;
+    left: 50%;
+    margin-top: 1rem;
+    background-color: #d7edfa7a;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+.article-content:first-child{
+    margin-top: 2rem;
+}
+.article-content img{
+    width:50px;
+    height: 50px;
+    padding-right: 0.5rem;
+}
+.content-column{
+    text-align: left;
+    width: 80%;
+    max-height: 8rem;
+    overflow: hidden;
+}
+.content-img{
+    width: 180px;
+    text-align: left;
+}
+.loadingDone{
+    width: 80%;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: #9bb2c7;
+}
+.article-content>:first-child{
+    width:30px;
+    height:30px;
+    float:right;
+}
+.article-content>:first-child:hover{
+    cursor: pointer;
 }

@@ -1,6 +1,6 @@
 <template>
 <form role="form" v-on:submit.prevent="submit">
-  <div class="logindiv">
+  <div class="login-div">
     <input type="text" v-model="info.name" class="form-control" placeholder="输入用户名"/>
     <input type="password" v-model="info.password" class="form-control" placeholder="输入密码"/>
     <button type="submit"  class="btn btn-primary">登录</button>
@@ -25,6 +25,7 @@ export default {
   },
 
   methods: {
+    //提交登陆数据
     submit() {
       const data = this.info;
       axios
@@ -35,6 +36,7 @@ export default {
             alert("登录失败："+msg);
           }
           else{
+            sessionStorage.setItem("name",data.name);
             this.$router.push({path:'/index'});
           }
         })
