@@ -3,6 +3,7 @@ html,body{
     height: 100%;
     padding: 0;
     margin-top: 0px;
+    font-size:4vmin;
 }
 fieldset{
     margin:0 2px;
@@ -83,8 +84,11 @@ button{
     left: 0;
     right: 0;
 }
+@media screen and (min-width:346px) and (max-width:347px) {
+    .content { width:100%; }
+    }
 .info-column{
-    height: 17rem;
+    height: 10rem;
     width: 100%;
     color: white;
     margin: 0px auto ;
@@ -93,8 +97,8 @@ button{
     background-size: 95% 90%;
 }
 .info-column>img{
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 100%;
 }
 .content-container{
   height: 100%;
@@ -108,13 +112,13 @@ button{
     padding: 0 15px;
 }
 .left-content>ul>li{
-    width: 230px;
-    height: 120px;
-    font-size: 1.5rem;
+    width: 8rem;
+    height: 7rem;
+    font-size: 1.1rem;
     background-image: url('../images/sec1.png');
-    background-size: 230px 150px;
+    background-size: 100% 120%;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 .articleCotent{
     margin: 10px auto;
@@ -134,13 +138,13 @@ button{
 }
 .title-font{
     display: block;
-    font-size: 4rem;
+    font-size: 12vmin;
     text-align: left;
     font-family: FZShuTi;
     text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 ;
     padding:0rem 3rem 0 1rem;
-    margin-top:-200px;
-    margin-left:250px;
+    margin-top:-8rem;
+    margin-left:11rem;
     font-weight: bolder;
 }
 .record-input{
